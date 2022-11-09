@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  max-height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.tv-set {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  max-width: 1000px;
+  width: 700px;
+  height: 600px;
+  border-radius: 0;
+}
+
+.tv-screen {
+  flex: 1;
+  align-self: stretch;
+  overflow: hidden;
+  border: 5px solid orange;
+}
+
+.tv-controls{
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 20px;
+}
+
+.power-off {
+  margin-left: auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+button {
+  padding: 5px 20px;
+}
